@@ -1,12 +1,39 @@
 <html>
   <head>
     <title>Another page on shapes</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@500&&family=Roboto+Slab:wght@500&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <h1>Another page on shapes</h1>
-    <img
-      src="https://drive.google.com/uc?export=view&id=1-qrTzEhjOoaPfmf1CFYn59mDYARo9alH"
-      width="130%"
-    />
+    <h1>SVG format</h1>
+    <p>This is a primer on SVG, that stands for Scalable Vector Graphics.</p>
+    <h2>A line</h2>
+    <svg width="500" height="100">
+      <line x1="0" y1="0" x2="500" y2="100" stroke="blue" />
+    </svg>
+    <h2>Some text</h2>
+    <svg width="500" height="50">
+      <text x="50" y="40">Hello World!</text>
+      <text x="200" y="20">Hello World!</text>
+      <text x="350" y="55">Hello World!</text>
+    </svg>
+    <h2>Some formatted text</h2>
+    <p>Use <em>font-family, font-size, fill</em></p>
+    <svg width="500" height="100">
+      <text
+        x="100"
+        y="50"
+        font-family="Roboto Slab"
+        font-size="40"
+        fill="green"
+      >
+        Hello World
+      </text>
+    </svg>
   </body>
 </html>

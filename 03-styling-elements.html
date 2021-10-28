@@ -2,15 +2,36 @@
   <head>
     <meta charset="UTF-8" />
     <script src="script.js"></script>
-    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@500&&family=Roboto+Slab:wght@500&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <div class="container">
       <div class="main-text">
-        <img
-          src="https://drive.google.com/uc?export=view&id=100WLXDTlQpDmyEURPEXeGvX2Vt11WuKL"
-          width="130%"
-        />
+        <h1>SVG format</h1>
+        <p>
+          This is a primer on SVG, that stands for Scalable Vector Graphics.
+        </p>
+        <h2>Fill and stroke</h2>
+        <svg width="500" height="50">
+          <circle
+            cx="250"
+            cy="25"
+            r="20"
+            fill="yellow"
+            stroke="orange"
+            stroke-width="5"
+          />
+        </svg>
+        <h2>Fill and stroke with a CSS class</h2>
+        <svg width="500" height="50">
+          <circle class="pumpkin" cx="250" cy="25" r="20" />
+        </svg>
       </div>
     </div>
   </body>
